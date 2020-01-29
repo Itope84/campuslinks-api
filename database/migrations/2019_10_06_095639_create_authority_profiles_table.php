@@ -21,6 +21,7 @@ class CreateAuthorityProfilesTable extends Migration
             $table->string('position')->nullable();
             $table->longText('social_links')->nullable();
             $table->text('review')->nullable();
+            $table->boolean('verified')->default(false);
             $table->timestamps();
         });
     }

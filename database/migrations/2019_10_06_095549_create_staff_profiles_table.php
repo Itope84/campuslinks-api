@@ -23,6 +23,7 @@ class CreateStaffProfilesTable extends Migration
             $table->string('department')->nullable();
             $table->longText('social_links')->nullable();
             $table->text('review')->nullable();
+            $table->boolean('verified')->default(false);
             $table->timestamps();
         });
     }

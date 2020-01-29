@@ -22,6 +22,7 @@ class CreateStudentProfilesTable extends Migration
             $table->string('course_of_study')->nullable();
             $table->bigInteger('state_of_origin')->nullable();
             $table->longText('social_links')->nullable();
+            $table->integer('level')->unsigned()->nullable();
             $table->timestamps();
         });
     }
